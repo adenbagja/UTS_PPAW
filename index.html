@@ -16,24 +16,26 @@
 		</button>
 		
 						
-		<div class="collapse navbar-collapse " id="navbarNav">
+		<div class="collapse navbar-collapse" id="navbarNav">
 
 			<ul class="navbar-nav">
-
+				<img src="img/logoicon.jpg" width="50" height="50" class="rounded d-inline-block align-top" hspace="20" alt="">
 				<li class="nav-item active">
-					<a class="nav-link list-group-item-action list-group-item-warning"  href="index.php">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link list-group-item-action list-group-item-warning rounded"  href="index.php">
+						Home <span class="sr-only">(current)</span>
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link list-group-item-action" href="keranjang.php">Keranjang</a>
+					<a class="nav-link list-group-item-action rounded" href="keranjang.php">Keranjang</a>
 				</li>
 				<!-- Jika sudah login maka --> 
 				 <?php if (isset($_SESSION['pelanggan'])): ?>
-					<li class="nav-item"><a class="nav-link list-group-item-action" href="logout.php">Logout</a></li>
+					<li class="nav-item"><a class="nav-link list-group-item-action rounded" href="logout.php">Logout</a></li>
 					<?php else: ?>
-						<li class="nav-item"><a class="nav-link list-group-item-action" href="login.php">Login</a></li>	
+						<li class="nav-item"><a class="nav-link list-group-item-action rounded" href="login.php">Login</a></li>	
 					<?php endif ?>
 				<li class="nav-item">
-					<a class="nav-link list-group-item-action" href="checkout.php">Checkout</a>
+					<a class="nav-link list-group-item-action rounded" href="checkout.php">Checkout</a>
 				</li>
 			</ul>
 		</div>
@@ -202,7 +204,7 @@
 
 		<div class="col-md-3">
 			<div class="card">
-				<img src="img/kerudung4.jpg" alt="card-1" class="card-img-top">
+				<img src="img/kerudung4.JPG" alt="card-1" class="card-img-top">
 				<div class="card-body">
 					<h5>Kerudung Deenay</h5>
 					<h6>Rp. 235.000</h6>
