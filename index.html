@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/mdb.min.css" rel="stylesheet">
 <title>project PPAW</title>
 </head>
 
@@ -28,12 +30,8 @@
 				<li class="nav-item">
 					<a class="nav-link list-group-item-action rounded" href="keranjang.php">Keranjang</a>
 				</li>
-				<!-- Jika sudah login maka --> 
-				 <?php if (isset($_SESSION['pelanggan'])): ?>
-					<li class="nav-item"><a class="nav-link list-group-item-action rounded" href="logout.php">Logout</a></li>
-					<?php else: ?>
-						<li class="nav-item"><a class="nav-link list-group-item-action rounded" href="login.php">Login</a></li>	
-					<?php endif ?>
+					<li class="nav-item"><a class="nav-link list-group-item-action rounded" href="register.php">Register</a></li>
+					<li class="nav-item"><a class="nav-link list-group-item-action rounded" href="login.php">Login</a></li>
 				<li class="nav-item">
 					<a class="nav-link list-group-item-action rounded" href="checkout.php">Checkout</a>
 				</li>
@@ -108,7 +106,7 @@
 <div class="container pt-5">
    
 	<div class="row">
-	  <h3 >SEMUA PRODUK</h3>
+	  <h3>SEMUA PRODUK</h3>
 	</div>
 		<div class="row">
 		<div class="underline"></div>
@@ -120,7 +118,8 @@
 <div class="container mt-5">
 	<div class="row">
 		<div class="col-md-3">
-			<div class="card">
+			<div class="card view zoom">
+				<div class="mask flex-center"></div>
 				<img src="img/baju.jpeg" alt="card-1" class="card-img-top">
 				<div class="card-body">
 					<h5>Grey Top</h5>
@@ -131,7 +130,8 @@
 		</div>
 		
 		<div class="col-md-3">
-			<div class="card">
+			<div class="card view zoom">
+				<div class="mask flex-center"></div>
 				<img src="img/baju2.jpg" alt="card-1" class="card-img-top">
 				<div class="card-body">
 					<h5>Sweater Boy</h5>
@@ -142,7 +142,8 @@
 		</div>
 		
 		<div class="col-md-3">
-			<div class="card">
+			<div class="card view zoom">
+				<div class="mask flex-center"></div>
 				<img src="img/baju4.jpg" alt="card-1" class="card-img-top">
 				<div class="card-body">
 					<h5>Sweater Deenay</h5>
@@ -155,7 +156,8 @@
 		
 		
 		<div class="col-md-3">
-			<div class="card">
+			<div class="card view zoom">
+				<div class="mask flex-center"></div>
 				<img src="img/baju3.jpg" alt="card-1" class="card-img-top">
 				<div class="card-body">
 					<h5>Sweater Top</h5>
@@ -167,7 +169,8 @@
 
 
 		<div class="col-md-3">
-			<div class="card">
+			<div class="card view zoom">
+				<div class="mask flex-center"></div>
 				<img src="img/kerudung.jpg" alt="card-1" class="card-img-top">
 				<div class="card-body">
 					<h5>kerudung Deenay</h5>
@@ -179,7 +182,8 @@
 
 
 		<div class="col-md-3">
-			<div class="card">
+			<div class="card view zoom">
+				<div class="mask flex-center"></div>
 				<img src="img/kerudung2.jpg" alt="card-1" class="card-img-top">
 				<div class="card-body">
 					<h5>Voal Printed</h5>
@@ -191,7 +195,8 @@
 
 
 		<div class="col-md-3">
-			<div class="card">
+			<div class="card view zoom">
+				<div class="mask flex-center"></div>
 				<img src="img/karudung1.jpg" alt="card-1" class="card-img-top">
 				<div class="card-body">
 					<h5>Kerudung Deenay</h5>
@@ -203,7 +208,8 @@
 
 
 		<div class="col-md-3">
-			<div class="card">
+			<div class="card view zoom">
+				<div class="mask flex-center"></div>
 				<img src="img/kerudung4.JPG" alt="card-1" class="card-img-top">
 				<div class="card-body">
 					<h5>Kerudung Deenay</h5>
