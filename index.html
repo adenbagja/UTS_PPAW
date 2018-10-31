@@ -9,30 +9,31 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+<nav class="navbar navbar-expand-lg navbar-light bg-orange">
 		<img class="navbar-brand" src="">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		
 						
-		<div class="collapse navbar-collapse" id="navbarNav">
+		<div class="collapse navbar-collapse " id="navbarNav">
 
 			<ul class="navbar-nav">
+
 				<li class="nav-item active">
-					<a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link list-group-item-action list-group-item-warning"  href="index.php">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="keranjang.php">Keranjang</a>
+					<a class="nav-link list-group-item-action" href="keranjang.php">Keranjang</a>
 				</li>
 				<!-- Jika sudah login maka --> 
 				 <?php if (isset($_SESSION['pelanggan'])): ?>
-					<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+					<li class="nav-item"><a class="nav-link list-group-item-action" href="logout.php">Logout</a></li>
 					<?php else: ?>
-						<li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>	
+						<li class="nav-item"><a class="nav-link list-group-item-action" href="login.php">Login</a></li>	
 					<?php endif ?>
 				<li class="nav-item">
-					<a class="nav-link" href="checkout.php">Checkout</a>
+					<a class="nav-link list-group-item-action" href="checkout.php">Checkout</a>
 				</li>
 			</ul>
 		</div>
